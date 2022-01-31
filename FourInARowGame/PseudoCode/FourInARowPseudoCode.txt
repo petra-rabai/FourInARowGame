@@ -1,0 +1,10 @@
+﻿Players options:
+	Player vs Player
+	Player vs Machine
+Board options:
+	Default (7 colums x 6rows)
+	Choose other board options:
+		 5×4, 6×5, 8×7, 9×7, 10×7, 8×8
+Discs:
+	21 red
+	21 yellow
