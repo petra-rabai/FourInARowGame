@@ -2,9 +2,26 @@
 	Player vs Player
 	Player vs Machine
 Board options:
-	Default (7 colums x 6rows)
+	Default (7 colums x 6 rows)
 	Choose other board options:
 		 5×4, 6×5, 8×7, 9×7, 10×7, 8×8
 Discs:
 	21 red
 	21 yellow
+	array [int, string ] redDiscs - count, color  
+	array [int,string] yellowDiscs - count, color
+
+Winner:
+	place four same color discs in a row (vertical,horizontal or diagonal).
+
+Board:
+	int colum 
+	int row
+	array [int,int ] Grid - int colum, int row
+	void CreateGrid(colum,row)
+
+Player:
+	choosedBoardOption
+	choosedDiscColor
+
+
