@@ -1,4 +1,4 @@
-﻿Players options:
+﻿Game mode options:
 	Player vs Player
 	Player vs Machine
 Board options:
@@ -8,20 +8,44 @@ Board options:
 Discs:
 	21 red
 	21 yellow
+	count
+	color
+	discGridPosition (colum,row)
+	void CreateDiscsPack(count,color,discGridPosition)
 	array [int, string ] redDiscs - count, color  
 	array [int,string] yellowDiscs - count, color
 
 Winner:
 	place four same color discs in a row (vertical,horizontal or diagonal).
+	void CheckDiscsPosition (player)
 
 Board:
 	int colum 
 	int row
-	array [int,int ] Grid - int colum, int row
-	void CreateGrid(colum,row)
+	bool cellOccupied
+	bool cellFree
+	Grid - int colum, int row, cellStatus
+	void CreateGrid(class Grid)
+	void CurrentState(redDiscs,yellowDiscs)
 
 Player:
 	choosedBoardOption
 	choosedDiscColor
+	choosedGameMode
+	actualCell
+	occupiedCells
 
+Gameplay:
+First round:
+First player choose disc color.
+Start the game: drop one disc to the center colum ( colum = 4, row = 6)
+Next Round:
+	check the grid current state.
+		
+
+A gameplay example, 
+shows the first player starting Connect Four by dropping one of their yellow discs into the center column of an empty game board. 
+The two players then alternate turns dropping one of their discs at a time into an unfilled column, 
+until the second player, with red discs, achieves a diagonal four in a row, and wins the game. 
+If the board fills up before either player achieves four in a row, then the game is a draw.
 
