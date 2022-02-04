@@ -22,11 +22,13 @@ Winner:
 Board:
 	int colum 
 	int row
+	array [int,int] gridSize
 	bool cellOccupied
-	bool cellFree
+	
 	Grid - int colum, int row, cellStatus
-	void CreateGrid(class Grid)
+	void DrawGrid(class Grid)
 	void CurrentState(redDiscs,yellowDiscs)
+	int[,] GetGridSize()
 
 Player:
 	choosedBoardOption
@@ -41,6 +43,7 @@ First player choose disc color.
 Start the game: drop one disc to the center colum ( colum = 4, row = 6)
 Next Round:
 	check the grid current state.
+
 		
 
 A gameplay example, 
