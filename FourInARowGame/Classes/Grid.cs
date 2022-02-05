@@ -16,24 +16,27 @@ namespace FourInARowGame.Classes
 
         public void DrawGrid(int colum, int row)
         {
-          //  colum = gridColum;
+            //  colum = gridColum;
             //row = gridRow;
 
-            for (int i = 0; i < row; i++)
+            for (int i = colum; i >= 0; i--)
             {
-                Console.WriteLine(" ________ ");
-                Console.WriteLine("|        |");
-                Console.WriteLine("|________|");
-                //Console.Write("\b");
-                for (int j = 0; j < colum; j++)
+                for (int j = 0; j < row; j++)
                 {
-                    Console.Write(" ________ ");
-                    Console.Write("|        |");
-                    Console.Write("|________|");
+                    Console.Write(" _____" + "\n" + "|     |" + "\n" + "|_____|");
                 }
 
-                Console.WriteLine("\t");
+                Console.Write("\n");
             }
+
+            //for (int i = 0; i < row; i++)
+            //{
+            //    Console.WriteLine(" ________ " + "\t" + " ________");
+            //    Console.WriteLine("|        |" + "\t" + "|        |");
+            //    Console.WriteLine("|________|" + "\t" + "|________|");
+            //}
+
+            // Console.Write(" _____" + "\n" + "|     |" + "\n" + "|_____|");
 
             Console.ReadLine();
         }
