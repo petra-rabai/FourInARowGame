@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Disc.cs" />
     <Compile Include="Classes\Grid.cs" />
+    <Compile Include="Interfaces\IDisc.cs" />
     <Compile Include="Interfaces\IGrid.cs" />
+    <Compile Include="Interfaces\IUIContent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

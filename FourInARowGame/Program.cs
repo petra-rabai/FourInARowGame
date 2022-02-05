@@ -11,8 +11,8 @@ namespace FourInARowGame
     {
         static void Main(string[] args)
         {
-            Grid grid = new Grid();
-            grid.DrawGrid(7,6);
+            Disc disc = new Disc();
+            disc.CreateRedDiscPack();
         }
     }
 }

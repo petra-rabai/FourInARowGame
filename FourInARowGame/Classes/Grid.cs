@@ -13,30 +13,22 @@ namespace FourInARowGame.Classes
         public int gridRow { get; set; } = 6;
         public string cellStatus { get; set; }
         public bool cellOccupied { get; set; }
+        public int[,] gridCellPosition { get; set; }
 
         public void DrawGrid(int colum, int row)
         {
-            //  colum = gridColum;
-            //row = gridRow;
-
-            for (int i = colum; i >= 0; i--)
+            
+            for (int i = 0; i < row; i++)
             {
-                for (int j = 0; j < row; j++)
+                for (int j = 0; j < colum; j++)
                 {
-                    Console.Write(" _____" + "\n" + "|     |" + "\n" + "|_____|");
+                    Console.Write(" " + "|" + gridCellPosition[j,i] + "|" + " ");
                 }
 
                 Console.Write("\n");
+                Console.Write("\n");
+                
             }
-
-            //for (int i = 0; i < row; i++)
-            //{
-            //    Console.WriteLine(" ________ " + "\t" + " ________");
-            //    Console.WriteLine("|        |" + "\t" + "|        |");
-            //    Console.WriteLine("|________|" + "\t" + "|________|");
-            //}
-
-            // Console.Write(" _____" + "\n" + "|     |" + "\n" + "|_____|");
 
             Console.ReadLine();
         }
@@ -44,6 +36,12 @@ namespace FourInARowGame.Classes
         public string GetCurrentCellStatus()
         {
             throw new NotImplementedException();
+        }
+
+        public int[,] InitializeGridCellPosition()
+        {
+            gridCellPosition = new int[gridColum, gridRow];
+            return gridCellPosition;
         }
     }
 }

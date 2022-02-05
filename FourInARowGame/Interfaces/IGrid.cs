@@ -12,7 +12,9 @@ namespace FourInARowGame.Interfaces
         int gridRow { get; set; }
         string cellStatus { get; set; }
         bool cellOccupied { get; set; }
+        int[,] gridCellPosition { get; set; }
         string GetCurrentCellStatus();
         void DrawGrid(int colum, int row);
+        int[,] InitializeGridCellPosition();
     }
 }
