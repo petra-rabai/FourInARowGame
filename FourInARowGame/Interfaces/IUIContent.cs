@@ -8,6 +8,6 @@ namespace FourInARowGame.Interfaces
 {
     public interface IUIContent
     {
-
+        void InitializeGameMainScreen();
     }
 }

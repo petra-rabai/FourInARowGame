@@ -11,8 +11,8 @@ namespace FourInARowGame
     {
         static void Main(string[] args)
         {
-            Disc disc = new Disc();
-            disc.CreateRedDiscPack();
+            UIContent content = new UIContent();
+            content.InitializeGameMainScreen();
         }
     }
 }
