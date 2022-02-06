@@ -12,6 +12,8 @@ namespace FourInARowGame
         static void Main(string[] args)
         {
             UIContent content = new UIContent();
+            SetupConsoleWindow setupConsole = new SetupConsoleWindow();
+            setupConsole.SetupConsoleScreen();
             content.InitializeGameMainScreen();
         }
     }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,25 +12,25 @@ namespace FourInARowGame.Classes
     {
         public void InitializeGameMainScreen()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-
-            Console.SetWindowSize(Console.LargestWindowHeight, Console.LargestWindowWidth);
-
-            Console.WriteLine("***********************************************************************************************************************************************");
-            Console.WriteLine("||                                                                                                                                           ||");
-            Console.WriteLine("||                                                                                                                                           ||");
-            Console.WriteLine("||                                                                                                                                           ||");
-            Console.WriteLine("||                                                                                                                                           ||");
-            Console.WriteLine("||                                                                                                                                           ||");
-            Console.WriteLine("||                                                                                                                                           ||");
-            Console.WriteLine("||                                                                                                                                           ||");
-            Console.WriteLine("||                                                                                                                                           ||");
-            Console.WriteLine("||                                                                                                                                           ||");
-            Console.WriteLine("||                                                                                                                                           ||");
-            Console.WriteLine("***********************************************************************************************************************************************");
-            
+            InitializeGameTitle();
 
             Console.ReadLine();
+        }
+
+        public void InitializeGameTitle()
+        {
+            Console.WriteLine("************************************************************************************************************************************************");
+            Console.WriteLine("*                                                                                                                                              *");
+            Console.WriteLine("*                                                                                                                                              *");
+            Console.WriteLine("*   ********    ********     *      *    *********   |  ********    *      *   |      *      |  ********     ********     *                 *  *");
+            Console.WriteLine("*   *           *      *     *      *    *   **  *   |     *        * *    *   |     * *     |  *  **  *     *      *      *               *   *");
+            Console.WriteLine("*   *****       *  **  *     *      *    *********   |     *        *  *   *   |    *   *    |  ********     *  **  *       *       *     *    *");
+            Console.WriteLine("*   *           *  **  *     *      *    *   *       |     *        *   *  *   |   *******   |  *   *        *  **  *        *     * *   *     *");
+            Console.WriteLine("*   *           *      *     *      *    *     *     |     *        *    * *   |  *       *  |  *     *      *      *         *   *   * *      *");
+            Console.WriteLine("*   *           ********     ********    *       *   |  ********    *     **   | *         * |  *       *    ********          **      **      *");
+            Console.WriteLine("*                                                                                                                                              *");
+            Console.WriteLine("*                                                                                                                                              *");
+            Console.WriteLine("************************************************************************************************************************************************");
         }
     }
 }

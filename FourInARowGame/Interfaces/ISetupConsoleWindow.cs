@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace FourInARowGame.Interfaces
 {
-    public interface IUIContent
+    public interface ISetupConsoleWindow
     {
-        void InitializeGameMainScreen();
-        void InitializeGameTitle();
+        void SetupConsoleScreen();
     }
 }
