@@ -10,11 +10,22 @@ namespace FourInARowGame.Classes
 {
     public class UIContent : IUIContent
     {
+        public void InitializeGameDescription()
+        {
+            throw new NotImplementedException();
+        }
+
         public void InitializeGameMainScreen()
         {
             InitializeGameTitle();
+            InitializeGameDescription();
+            InitializeGameMenu();
+        }
 
-            Console.ReadLine();
+        public void InitializeGameMenu()
+        {
+            Console.Write("Game mode - G key " + " Board options - O key" + "Game rules - R key" + "Quit - Q key");
+
         }
 
         public void InitializeGameTitle()

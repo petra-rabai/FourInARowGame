@@ -10,5 +10,7 @@ namespace FourInARowGame.Interfaces
     {
         void InitializeGameMainScreen();
         void InitializeGameTitle();
+        void InitializeGameDescription();
+        void InitializeGameMenu();
     }
 }

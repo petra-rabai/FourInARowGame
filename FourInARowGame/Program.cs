@@ -15,6 +15,8 @@ namespace FourInARowGame
             SetupConsoleWindow setupConsole = new SetupConsoleWindow();
             setupConsole.SetupConsoleScreen();
             content.InitializeGameMainScreen();
+
+            Console.ReadLine();
         }
     }
 }
