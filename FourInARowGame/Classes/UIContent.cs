@@ -12,7 +12,7 @@ namespace FourInARowGame.Classes
     {
         public void InitializeGameDescription()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("\nBlock your opponent and set up for a '4 in a row' win.\n");
         }
 
         public void InitializeGameMainScreen()
@@ -24,8 +24,11 @@ namespace FourInARowGame.Classes
 
         public void InitializeGameMenu()
         {
-            Console.Write("Game mode - G key " + " Board options - O key" + "Game rules - R key" + "Quit - Q key");
-
+            Console.WriteLine("\nPlease choose an option: \n");
+            Console.WriteLine("\n************************\n");
+            Console.WriteLine(" Game Menu: \n");
+            Console.Write("* Game mode - G key \n" + "* Board options - O key\n" + "* Game rules - R key\n" + "* Quit - Q key\n");
+            Console.WriteLine("\n************************");
         }
 
         public void InitializeGameTitle()
