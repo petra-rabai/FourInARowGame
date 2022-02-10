@@ -27,7 +27,7 @@ namespace FourInARowGame.Classes
             Console.WriteLine("\nPlease choose an option: \n");
             Console.WriteLine("\n************************\n");
             Console.WriteLine(" Game Menu: \n");
-            Console.Write("* Game mode - G key \n" + "* Board options - O key\n" + "* Game rules - R key\n" + "* Quit - Q key\n");
+            Console.Write("* Game mode - G key \n" + "* Board options - O key \n" + "* Game rules - R key \n" + "* Quit - Q key \n");
             Console.WriteLine("\n************************");
         }
 
