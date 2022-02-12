@@ -36,6 +36,7 @@ Player:
 	choosedGameMode
 	actualCell
 	occupiedCells
+	menuNavigation
 
 Gameplay:
 First round:
