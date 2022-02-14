@@ -1,4 +1,27 @@
-﻿Game mode options:
+﻿Program identities:
+Players:
+ - Player:
+	- Name
+	- Selected disc color
+	- Available disc count
+
+ - Machine:
+	- Name
+	- Selected disc color
+	- Available disc count
+
+Players actions:
+	GetName
+	GetDiscColor
+
+
+
+
+
+
+
+
+Game mode options:
 	Player vs Player
 	Player vs Machine
 Board options:
