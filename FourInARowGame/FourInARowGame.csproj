@@ -43,16 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Disc.cs" />
-    <Compile Include="Classes\Grid.cs" />
-    <Compile Include="Classes\Player.cs" />
-    <Compile Include="Classes\SetupConsoleWindow.cs" />
-    <Compile Include="Classes\UIContent.cs" />
-    <Compile Include="Interfaces\IDisc.cs" />
-    <Compile Include="Interfaces\IGrid.cs" />
-    <Compile Include="Interfaces\IPlayer.cs" />
-    <Compile Include="Interfaces\ISetupConsoleWindow.cs" />
-    <Compile Include="Interfaces\IUIContent.cs" />
+    <Compile Include="Classes\Logic\Player.cs" />
+    <Compile Include="Classes\UI\SetupConsoleWindow.cs" />
+    <Compile Include="Classes\UI\UIContent.cs" />
+    <Compile Include="Interfaces\Logic\IPlayer.cs" />
+    <Compile Include="Interfaces\UI\ISetupConsoleWindow.cs" />
+    <Compile Include="Interfaces\UI\IUIContent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,5 +58,6 @@
   <ItemGroup>
     <Content Include="PseudoCode\FourInARowPseudoCode.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,5 +12,6 @@ namespace FourInARowGame.Interfaces
         void InitializeGameTitle();
         void InitializeGameDescription();
         void InitializeGameMenu();
+        void InitializeGetPlayerName();
     }
 }
