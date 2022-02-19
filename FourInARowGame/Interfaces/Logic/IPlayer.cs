@@ -11,7 +11,7 @@ namespace FourInARowGame.Interfaces
         string playerName { get; set; }
         string choosedDiscColor { get; set; }
         int availableDiscCount { get; set; }
-        bool firsPlayer { get; set; }
+        bool firstPlayer { get; set; }
         string GetName();
         string GetDiscColor();
     }

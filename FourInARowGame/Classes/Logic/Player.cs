@@ -12,7 +12,7 @@ namespace FourInARowGame.Classes
         public string playerName { get; set; }
         public string choosedDiscColor { get; set; }
         public int availableDiscCount { get; set; }
-        public bool firsPlayer { get; set; }
+        public bool firstPlayer { get; set; }
 
         public string GetDiscColor()
         {
