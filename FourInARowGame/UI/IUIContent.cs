@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FourInARowGame.Interfaces
+namespace FourInARowGame
 {
     public interface IUIContent
     {
@@ -13,5 +13,7 @@ namespace FourInARowGame.Interfaces
         void InitializeGameDescription();
         void InitializeGameMenu();
         void InitializeGetPlayerName();
+        void InitializeBoradSizeOption();
+
     }
 }

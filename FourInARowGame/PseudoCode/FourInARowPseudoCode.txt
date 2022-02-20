@@ -17,7 +17,7 @@ Players:
 		GetDiscColor
 
 
-Board:
+Grid:
 	Size:
 		colum
 		row
@@ -27,14 +27,17 @@ Board:
 		occupied
 			true,false
 
-	Board actions:
-		CreateTheBoard
-			GetBoardSizeFromThePlayer
+	Grid actions:
+		CreateTheGrid
+			GetGridSize(palyer)
 			    int[] size=colum,row
 				return size
 			DrawTheGridToTheScreen(size)
 			CreateCellsMatrix(size)
 				int,bool,string[] cellsmatrix=cellposition,occopied,color
+
+				
+
 
 Game:
 	gameMode
@@ -125,19 +128,7 @@ Game:
 				Author
 					Display a note from the game creator and soruce informations
 				Quit
-					Close the Application
-
-
-
-
-
-
-
-
-
-
-
-
+					Close the Application"
 
 
 

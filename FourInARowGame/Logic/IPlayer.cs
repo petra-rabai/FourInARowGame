@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FourInARowGame.Interfaces
+namespace FourInARowGame
 {
     public interface IPlayer
     {
@@ -12,7 +12,9 @@ namespace FourInARowGame.Interfaces
         string choosedDiscColor { get; set; }
         int availableDiscCount { get; set; }
         bool firstPlayer { get; set; }
-        string GetName();
+        string GetPlayerName();
         string GetDiscColor();
+        int GetAvailableDiscCount();
+        bool GetFristPlayerOption();
     }
 }

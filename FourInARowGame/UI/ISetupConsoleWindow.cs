@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FourInARowGame.Interfaces
+namespace FourInARowGame
 {
     public interface ISetupConsoleWindow
     {
