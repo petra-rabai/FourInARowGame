@@ -64,5 +64,19 @@ namespace FourInARowGame
         {
             Console.WriteLine("Please add your name: \n");
         }
+
+        public void DrawGrid(Grid grid)
+        {
+            for (int i = 0; i < grid.Size[1]; i++)
+            {
+                for (int j = 0; j < grid.Size[0]; j++)
+                {
+                    Console.Write($" |{grid.PositionMatrix[j, i]}| ");
+                }
+
+                Console.Write("\n");
+                Console.Write("\n");
+            }
+        }
     }
 }

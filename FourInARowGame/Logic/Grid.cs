@@ -40,18 +40,5 @@ namespace FourInARowGame
             return PositionMatrix;
         }
 
-        public void DrawGrid()
-        {
-            for (int i = 0; i < Size[1]; i++)
-            {
-                for (int j = 0; j < Size[0]; j++)
-                {
-                    Console.Write($" |{PositionMatrix[j, i]}| ");
-                }
-
-                Console.Write("\n");
-                Console.Write("\n");
-            }
-        }
     }
 }

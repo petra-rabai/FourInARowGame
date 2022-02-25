@@ -14,6 +14,7 @@ namespace FourInARowGame
         void InitializeGameMenu();
         void InitializeGetPlayerName();
         void InitializeBoradSizeOption();
+        void DrawGrid(Grid grid);
 
     }
 }

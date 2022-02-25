@@ -8,6 +8,5 @@
 
         int[,] CreatePositionMatrix(int[] size);
         int[] GetSize();
-        void DrawGrid();
     }
 }
